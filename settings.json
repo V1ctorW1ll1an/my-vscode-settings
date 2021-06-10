@@ -1,81 +1,61 @@
 {
-  //TODO
-  // "javascript.validate.enable": false,
-  "todo-tree.tree.showScanModeButton": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "gruvboxConcoctis dark medium",
-  "material-icon-theme.folders.color": "#42a5f5",
-  "material-icon-theme.activeIconPack": "vue_vuex",
-  "terminal.integrated.fontSize": 14,
-  "workbench.startupEditor": "newUntitledFile",
+  "editor.minimap.enabled": false, // removes minimap
+  "editor.renderWhitespace": "none", // removes whitespace chars
+  "editor.renderIndentGuides": true, // removes indent guides
+  "editor.renderLineHighlight": "none", // removes line highlight
+  "editor.overviewRulerBorder": false, // removes border from overview ruler (located on the right, same position as the scrollbar)
+  "editor.hideCursorInOverviewRuler": true, // hides cursor mark in the overview ruler
+  "editor.folding": true, // removes the folding feature
+  "editor.occurrencesHighlight": false, // removes highlights occurrences (still works when you select a word)
+  "editor.glyphMargin": true,
+  "explorer.openEditors.visible": 0, // removes the open editors section at the top of the sidebar, you can see the opened files with ⌘ + ⌥ + Tab
+  "workbench.activityBar.visible": true, // removes the activity bar (the 4 icons at the left of the screen), so now you will have to open the explorer, git, debugger and extension with shortcuts or through the Command Palette
+  "workbench.editor.showIcons": false, // removes icon from opened files in tabs
+  "workbench.colorCustomizations": {
+    // object that allows you to customize your color theme: https://code.visualstudio.com/docs/getstarted/theme-color-reference
+    "tab.activeBorder": "#0000" // removes border to highlight active tabs (the colors formats are: #RGB, #RGBA, #RRGGBB or #RRGGBBAA)
+  },
+  "window.zoomLevel": 1,
+  "editor.fontSize": 18,
+  "editor.fontFamily": "Fira Code,'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "workbench.colorTheme": "One Dark Pro",
+  "editor.fontLigatures": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "terminal.integrated.defaultProfile.linux": "/usr/bin/zsh",
+  "terminal.integrated.tabs.enabled": true,
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "editor.lineHeight": 36,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.tabSize": 2,
-  "editor.fontSize": 18,
-  "editor.lineHeight": 26,
-  "editor.fontFamily": "Fira Code,Cascadia code",
-  "editor.fontLigatures": true,
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "node_modules": true
-  },
-  "explorer.compactFolders": false,
-  "editor.renderLineHighlight": "gutter",
-  "workbench.editor.labelFormat": "short",
-  "extensions.ignoreRecommendations": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "breadcrumbs.enabled": true,
-  "editor.parameterHints.enabled": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "editor.rulers": [
-    80,
-    120
-  ],
+  "editor.rulers": [80, 120],
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "window.zoomLevel": 0,
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx"
+  "eslint.validate": [
+    "javascript", "vue", "html"
+  ],
+  "vetur.validation.template": false,
+  "cSpell.language": ",pt,pt_PT",
+  "terminal.integrated.allowMnemonics": true,
+  "terminal.integrated.allowWorkspaceConfiguration": true,
+  "code-runner.terminalRoot": "/usr/bin/zsh",
+  "terminal.integrated.automationShell.linux": "/usr/bin/zsh",
+  "vetur.ignoreProjectWarning": true,
+  "yaml.schemas": {
+    "file:///home/victor/.vscode/extensions/atlassian.atlascode-2.9.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
   },
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "git.enableSmartCommit": true,
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  "typescript.tsserver.log": "verbose",
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  "screencastMode.onlyKeyboardShortcuts": true,
-  "material-icon-theme.folders.associations": {
-    "infra": "app",
-    "entities": "class",
-    "schemas": "class",
-    "typeorm": "database",
-    "repositories": "mappings",
-    "http": "container",
-    "migrations": "tools",
-    "modules": "components",
-    "implementations": "core",
-    "dtos": "typescript",
-    "fakes": "mock",
-    "websockets": "pipe",
-    "protos": "pipe",
-    "grpc": "pipe"
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "material-icon-theme.files.associations": {
-    "ormconfig.json": "database",
-    "tsconfig.json": "tune",
-    "*.proto": "3d"
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "editor.minimap.enabled": false,
+  
 }
